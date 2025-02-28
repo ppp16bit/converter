@@ -24,21 +24,25 @@ $$
 hexadecimal Conversion Equations
 
 each character is converted to its ASCII value, then to hex:
+
 $$
 \text{hex}(c) = \text{hex} (\text{ord}(c))
 $$
 
 apply the conversion to each character and concatenate:
+
 $$
 \text{HexString}(S) = \bigoplus_{i=0}^{n-1} \text{hex}(S_i)
 $$
 
 convert each hex value back to its character:
+
 $$
 \text{char}(H) = \text{chr} (\text{dec}(H))
 $$
 
 convert each hex pair back to characters and concatenate:
+
 $$
 \text{Text}(H) = \bigoplus_{i=0}^{m-1} \text{char}(H_i)
 $$
